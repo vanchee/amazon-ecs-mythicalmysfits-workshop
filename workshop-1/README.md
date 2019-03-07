@@ -1,4 +1,4 @@
-Monolith to Microservices with Docker and AWS Fargate
+Dockerizing an app and deploying onto AWS Fargate
 ====================================================
 
 Welcome to the Mythical Mysfits team!
