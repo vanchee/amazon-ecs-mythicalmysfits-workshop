@@ -3,7 +3,7 @@ Dockerizing an app and deploying onto AWS Fargate
 
 Welcome to the Mythical Mysfits team!
 
-In this lab, you'll build the monolithic Mythical Mysfits adoption platform with Docker, deploy it on Amazon ECS, and then break it down into a couple of more manageable microservices. Let's get started!
+In this lab, you'll build the Mythical Mysfits adoption platform with Docker, deploy it on Amazon ECS. Let's get started!
 
 ### Requirements:
 
@@ -17,9 +17,9 @@ These labs are designed to be completed in sequence, and the full set of instruc
 
 
 * **Workshop Setup:** [Setup working environment on AWS](#lets-begin)
-* **Lab 1:** [Containerize the Mythical Mysfits monolith](#lab-1---containerize-the-mythical-mysfits-adoption-agency-platform)
+* **Lab 1:** [Containerize the Mythical Mysfits application](#lab-1---containerize-the-mythical-mysfits-adoption-agency-platform)
 * **Lab 2:** [Deploy the container using AWS Fargate](#lab-2---deploy-your-container-using-ecrecs)
-* **Lab 3:** [Scale the adoption platform monolith with an ALB and an ECS Service](#lab-3---scale-the-adoption-platform-monolith-with-an-alb)
+* **Lab 3:** [Scale the adoption platform application with an ALB and an ECS Service](#lab-3---scale-the-adoption-platform-monolith-with-an-alb)
 * **Cleanup** [Put everything away nicely](#workshop-cleanup)
 
 ### Conventions:
@@ -105,7 +105,7 @@ You will be deploying infrastructure on AWS which will have an associated cost. 
 
 
 ### Checkpoint:
-At this point, the Mythical Mysfits website should be available at the static site endpoint for the S3 bucket created by CloudFormation. You can visit the site at <code>http://<b><i>BUCKET_NAME</i></b>.s3-website.<b><i>REGION</i></b>.amazonaws.com/</code>. You can find the ***BUCKET_NAME*** in the CloudFormation outputs saved in the file `workshop-1/cfn-outputs.json`. Check that you can view the site, but there won't be much content visible yet until we launch the Mythical Mysfits monolith service:
+At this point, the Mythical Mysfits website should be available at the static site endpoint for the S3 bucket created by CloudFormation. You can visit the site at <code>http://<b><i>BUCKET_NAME</i></b>.s3-website.<b><i>REGION</i></b>.amazonaws.com/</code>. You can find the ***BUCKET_NAME*** in the CloudFormation outputs saved in the file `workshop-1/cfn-outputs.json`. Check that you can view the site, but there won't be much content visible yet until we launch the Mythical Mysfits service:
 
 ![initial website](images/00-website.png)
 
